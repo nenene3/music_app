@@ -1,0 +1,142 @@
+{
+  "format": {
+    "tagTypes": [
+      "vorbis"
+    ],
+    "trackInfo": [],
+    "container": "FLAC",
+    "codec": "FLAC",
+    "lossless": true,
+    "numberOfChannels": 2,
+    "bitsPerSample": 16,
+    "sampleRate": 44100,
+    "duration": 177.33333333333334,
+    "bitrate": 757661.2330827067
+  },
+  "native": {
+    "vorbis": [
+      {
+        "id": "REPLAYGAIN_TRACK_GAIN",
+        "value": "-5.64 dB"
+      },
+      {
+        "id": "LYRICS",
+        "value": "Instrumental"
+      },
+      {
+        "id": "ARTIST",
+        "value": "Burial"
+      },
+      {
+        "id": "REPLAYGAIN_ALBUM_PEAK",
+        "value": "0.988556"
+      },
+      {
+        "id": "COMPOSER",
+        "value": "Burial"
+      },
+      {
+        "id": "TITLE",
+        "value": "Endorphin"
+      },
+      {
+        "id": "REPLAYGAIN_TRACK_PEAK",
+        "value": "0.977295"
+      },
+      {
+        "id": "ALBUMARTIST",
+        "value": "Burial"
+      },
+      {
+        "id": "REPLAYGAIN_ALBUM_GAIN",
+        "value": "-6.60 dB"
+      },
+      {
+        "id": "DATE",
+        "value": "2007-11-05"
+      },
+      {
+        "id": "LABEL",
+        "value": "Beat Records"
+      },
+      {
+        "id": "PUBLISHER",
+        "value": "Beat Records"
+      },
+      {
+        "id": "ALBUM",
+        "value": "Untrue"
+      },
+      {
+        "id": "CATALOGNUMBER",
+        "value": "BRC-322"
+      },
+      {
+        "id": "TRACKNUMBER",
+        "value": "5"
+      },
+      {
+        "id": "TRACKTOTAL",
+        "value": "15"
+      },
+      {
+        "id": "TOTALTRACKS",
+        "value": "15"
+      }
+    ]
+  },
+  "quality": {
+    "warnings": []
+  },
+  "common": {
+    "track": {
+      "no": 5,
+      "of": 15
+    },
+    "disk": {
+      "no": null,
+      "of": null
+    },
+    "movementIndex": {
+      "no": null,
+      "of": null
+    },
+    "replaygain_track_gain": {
+      "dB": -5.64,
+      "ratio": 0.27289777828080414
+    },
+    "lyrics": [
+      "Instrumental"
+    ],
+    "artists": [
+      "Burial"
+    ],
+    "artist": "Burial",
+    "replaygain_album_peak": {
+      "dB": -0.04998723616756502,
+      "ratio": 0.988556
+    },
+    "composer": [
+      "Burial"
+    ],
+    "title": "Endorphin",
+    "replaygain_track_peak": {
+      "dB": -0.09974323145150184,
+      "ratio": 0.977295
+    },
+    "albumartist": "Burial",
+    "replaygain_album_gain": {
+      "dB": -6.6,
+      "ratio": 0.2187761623949553
+    },
+    "year": 2007,
+    "date": "2007-11-05",
+    "label": [
+      "Beat Records"
+    ],
+    "album": "Untrue",
+    "catalognumber": [
+      "BRC-322"
+    ]
+  }
+}
