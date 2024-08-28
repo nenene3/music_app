@@ -74,7 +74,7 @@ const MusicPlayer = ({ className }) => {
     if (cover) {
       URL.revokeObjectURL(cover);
     }
-    console.log(mp3Url);
+    // console.log(mp3Url);
     try {
       const response = await axios.get(mp3Url, {
         responseType: "arraybuffer",
@@ -85,7 +85,7 @@ const MusicPlayer = ({ className }) => {
         uint8Array,
         `${mp3Url.endsWith(".flac") ? "audio/flac" : "audio/mpeg"}`
       );
-      console.log(metadata);
+      // console.log(metadata);
       setTitle(metadata.common.title);
       setArtist(metadata.common.artist);
       setDuration(metadata.format.duration);
@@ -122,7 +122,7 @@ const MusicPlayer = ({ className }) => {
       if(isPlaying)
         dispatch(toggleSong())      
     }
-    console.log(songRef.current.src)
+    
 
   }, [que]);
 
@@ -151,7 +151,7 @@ const MusicPlayer = ({ className }) => {
   };
   return (
     <div
-      className={`bg-slate-900 border border-white h-[20svh] flex items-center justify-center text-white `}
+      className={`bg-slate-900 border border-white h-[15svh] flex items-center justify-center text-white `}
     >
       <div className="flex items-center gap-4 justify-center">
         <img
@@ -200,7 +200,6 @@ const MusicPlayer = ({ className }) => {
           onChange={handleVolumeChange}
         />
       </div>
-      <Button onClick={() => console.log(isPlaying)}>console,</Button>
     </div>
   );
 };

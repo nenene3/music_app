@@ -10,21 +10,21 @@ const Music = () => {
   const { data: music, error, isloading } = useGetMusicQuery();
   const { que } = useSelector((state) => state.musicQue);
   return (
-      <div className=" bg-slate-700 h-screen">
+      <div className=" bg-slate-700">
         <div className={`${error ? "hidden" : ""} `}>
           <div className="flex ">
             {music ? <MusicSideBar music={music} /> : "a"}
-            <div className="flex w-[80svh] mx-auto">
+            <div className="flex w-[75svh] mx-auto">
             <Outlet />
             </div>
             <QueMusic/>
           </div>
-          <MusicPlayer className={`h-full`} />
+          <MusicPlayer className={``} />
         </div>
         <div
           className={`${
             !error ? "hidden" : ""
-          } text-white  flex items-center justify-center h-screen text-7xl `}
+          } text-white  flex items-center justify-center  text-7xl `}
         >
           no music found
         </div>

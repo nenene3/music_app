@@ -11,33 +11,32 @@ import ArtistAlbums from "./components/artistAlbums";
 import QueMusic from "./components/queMusic";
 import MusicPlayer from "./components/musicPlayer/MusicPlayer.jsx";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute.jsx";
-
+import NavBar from "./components/NavBar/NavBar.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/music",
-    element: <Music />,
     children: [
       {
-        path: "/music/:artist",
-        element: <ArtistAlbums />,
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        element: <PrivateRoute />,
+        children: [
+          {
+            path: "/music",
+            element: <Music />,
+            children: [
+              {
+                path: "/music/:artist",
+                element: <ArtistAlbums />,
+              },
+            ],
+          },
+        ],
       },
     ],
-  },
-  {
-    path: "/que",
-    element: <QueMusic />,
-  },
-  {
-    path: "/musicPlayer",
-    element: <MusicPlayer />,
   },
 ]);
 

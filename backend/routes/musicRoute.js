@@ -3,9 +3,9 @@ import express from 'express'
 import { protect } from '../middlewares/authHandler.js' 
 const router = express.Router()
 
-router.route('/').get(controller.getArtists)
-router.route('/:artist').get(controller.albums)
-router.route('/:artist/:album').get(controller.getSongsFromAlbum)
+router.route('/').get(protect,controller.getArtists)
+router.route('/:artist').get(protect,controller.albums)
+router.route('/:artist/:album').get(protect,controller.getSongsFromAlbum)
 
 
 export default router 
