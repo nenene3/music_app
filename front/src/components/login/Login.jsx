@@ -20,7 +20,9 @@ const Login = () => {
     e.preventDefault();
     try {
       const user = await login({ email, password });
-      dispatch(setCredentials(user.data))
+      if(user.data){
+        dispatch(setCredentials(user.data))
+      }
       console.log(user);
 
     } catch (e) {

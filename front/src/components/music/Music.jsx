@@ -12,9 +12,9 @@ const Music = () => {
   return (
       <div className=" bg-slate-700">
         <div className={`${error ? "hidden" : ""} `}>
-          <div className="flex ">
+          <div className="flex  justify-between">
             {music ? <MusicSideBar music={music} /> : "a"}
-            <div className="flex w-[75svh] mx-auto">
+            <div className=" w-full">
             <Outlet />
             </div>
             <QueMusic/>
@@ -24,7 +24,7 @@ const Music = () => {
         <div
           className={`${
             !error ? "hidden" : ""
-          } text-white  flex items-center justify-center  text-7xl `}
+          } text-white  flex items-center justify-center  text-7xl h-screen`}
         >
           no music found
         </div>
